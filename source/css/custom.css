@@ -1,0 +1,32 @@
+/* Mac 风格代码块增强 */
+
+figure.highlight {
+  border-radius: 14px !important;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* 工具栏 */
+figure.highlight .highlight-tools {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* 代码区域 */
+figure.highlight pre,
+figure.highlight table {
+  background:#1e1e1e !important;
+}
+
+/* 复制按钮 */
+.highlight-copy-btn {
+  border-radius: 8px !important;
+  padding: 4px 10px !important;
+  font-size: 12px;
+}

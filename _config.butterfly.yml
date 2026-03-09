@@ -284,7 +284,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: Liquid glass notes and experiments
+    description: blogs of lzm
     button:
       enable: true
       icon: fab fa-github

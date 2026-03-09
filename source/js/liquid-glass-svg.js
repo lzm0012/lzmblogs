@@ -38,6 +38,14 @@
           </feTurbulence>
           <feDisplacementMap in="SourceGraphic" in2="noise" scale="22" xChannelSelector="R" yChannelSelector="G" />
         </filter>
+
+        <filter id="liquid-sheen-soft" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+          <feTurbulence type="fractalNoise" baseFrequency="0.018 0.015" numOctaves="1" seed="11" result="grain">
+            <animate attributeName="baseFrequency" dur="20s" values="0.018 0.015;0.022 0.017;0.018 0.015" repeatCount="indefinite" />
+          </feTurbulence>
+          <feDisplacementMap in="SourceGraphic" in2="grain" scale="4" xChannelSelector="R" yChannelSelector="G" result="warped" />
+          <feGaussianBlur in="warped" stdDeviation="0.35" />
+        </filter>
       </defs>
     `;
 

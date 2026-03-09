@@ -3,6 +3,44 @@
    解决外层圆角与内层矩形背景冲突
    ========================= */
 
+@import url('/fonts/noto-sans-sc/wght.css');
+@import url('/fonts/noto-serif-sc/wght.css');
+@import url('/fonts/jetbrains-mono/wght.css');
+@import url('/fonts/jetbrains-mono/wght-italic.css');
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: 'Noto Sans SC Variable', 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#post-info .post-title,
+#page-header #site-title,
+.article-title {
+  font-family: 'Noto Serif SC Variable', 'Noto Serif SC', 'Source Han Serif SC', serif;
+}
+
+pre,
+code,
+kbd,
+samp,
+figure.highlight pre,
+figure.highlight pre code,
+.container code {
+  font-family: 'JetBrains Mono Variable', 'JetBrains Mono', 'Cascadia Mono', 'SFMono-Regular', 'Consolas', monospace !important;
+}
+
 figure.highlight {
   position: relative;
   border-radius: 18px !important;

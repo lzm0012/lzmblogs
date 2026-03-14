@@ -74,3 +74,5 @@ $$ \mathbf{W} = \begin{bmatrix} W_0 \\ W_1 \\ \vdots \\ W_{N-1} \end{bmatrix} $$
 **DBF的数学公式可抽象为内积运算：**
 $$ Y = \mathbf{W}^H \mathbf{X} $$
 *($\mathbf{W}^H$ 表示复共轭转置矩阵)*
+
+#### DBF 系统架构

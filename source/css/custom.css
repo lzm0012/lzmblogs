@@ -395,7 +395,7 @@ figure.highlight table {
   #page-header.nav-fixed #nav,
   #nav .menus_items .menus_item .menus_item_child,
   #post-info #post-meta .post-meta-chip {
-    background: rgba(255, 255, 255, 0.95) !important;
+    background: rgba(145, 172, 200, 0.78) !important;
   }
 
   [data-theme='dark'] #recent-posts .recent-post-item,

@@ -22,21 +22,36 @@
           <feTurbulence type="fractalNoise" baseFrequency="0.008 0.014" numOctaves="2" seed="13" result="noise">
             <animate attributeName="baseFrequency" dur="22s" values="0.008 0.014;0.012 0.017;0.008 0.014" repeatCount="indefinite" />
           </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" result="warped" />
+          <feColorMatrix in="warped" type="matrix"
+            values="1.01 0    0    0  0.008
+                    0    0.99 0    0  0.012
+                    0    0    1.03 0  0.018
+                    0    0    0    1  0" />
         </filter>
 
         <filter id="liquid-distort-medium" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
           <feTurbulence type="fractalNoise" baseFrequency="0.011 0.02" numOctaves="2" seed="17" result="noise">
             <animate attributeName="baseFrequency" dur="18s" values="0.011 0.02;0.016 0.024;0.011 0.02" repeatCount="indefinite" />
           </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="16" xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="16" xChannelSelector="R" yChannelSelector="G" result="warped" />
+          <feColorMatrix in="warped" type="matrix"
+            values="1.02 0    0    0  0.010
+                    0    0.98 0    0  0.015
+                    0    0    1.05 0  0.025
+                    0    0    0    1  0" />
         </filter>
 
         <filter id="liquid-distort-strong" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
           <feTurbulence type="fractalNoise" baseFrequency="0.014 0.026" numOctaves="3" seed="23" result="noise">
             <animate attributeName="baseFrequency" dur="14s" values="0.014 0.026;0.02 0.03;0.014 0.026" repeatCount="indefinite" />
           </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="22" xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="22" xChannelSelector="R" yChannelSelector="G" result="warped" />
+          <feColorMatrix in="warped" type="matrix"
+            values="1.03 0    0    0  0.012
+                    0    0.97 0    0  0.018
+                    0    0    1.07 0  0.032
+                    0    0    0    1  0" />
         </filter>
 
         <filter id="liquid-sheen-soft" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
@@ -44,7 +59,12 @@
             <animate attributeName="baseFrequency" dur="20s" values="0.018 0.015;0.022 0.017;0.018 0.015" repeatCount="indefinite" />
           </feTurbulence>
           <feDisplacementMap in="SourceGraphic" in2="grain" scale="4" xChannelSelector="R" yChannelSelector="G" result="warped" />
-          <feGaussianBlur in="warped" stdDeviation="0.35" />
+          <feColorMatrix in="warped" type="matrix"
+            values="1.01 0    0    0  0.006
+                    0    0.99 0    0  0.010
+                    0    0    1.02 0  0.014
+                    0    0    0    1  0" />
+          <feGaussianBlur stdDeviation="0.35" />
         </filter>
       </defs>
     `;

@@ -16,6 +16,7 @@
     "@fontsource-variable/noto-sans-sc": "^5.2.10",
     "@fontsource-variable/noto-serif-sc": "^5.2.10",
     "@iktakahiro/markdown-it-katex": "^4.0.1",
+    "@traptitech/markdown-it-katex": "^3.6.0",
     "hexo": "^8.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",

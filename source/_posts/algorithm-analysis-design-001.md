@@ -150,3 +150,19 @@ $\therefore T(n)\le d\cdot (\frac{n}{5})+d\cdot (\frac{7n}{10})+cn=\frac{9}{10}d
 为使$\frac{9}{10}dn+cn\le dn$成立，需满足$d\ge 10c$
 
 则取$d=max(1,10c)$即可
+#### 主定理
+主定理主要用于求解这一问题：
+$$
+T(n)=aT(\frac{n}{b})+f(n)
+$$
+不妨设$d=n^{log_ba}$
+
+情形一：$f(n)<n^d$，则$T(n)=\Theta(n^d)=\Theta(n^{log_ba})$
+
+情形二：$f(n)$与$n^d$同阶
+
+若$\exist k\ge 0$,使得$f(n)=\Theta(n^dlogn)$，则$T(n)=\Theta (n^dlog^{k+1}n)$
+
+情形三：若$f(n)>n^d$
+
+则$T(n)=\Theta(f(n))$

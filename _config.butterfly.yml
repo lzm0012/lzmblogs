@@ -1061,9 +1061,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/custom.css">
   bottom:
-    - <script src="/js/liquid-glass-svg.js"></script>
     - <script src="/js/post-meta-chips.js"></script>
-    - <script src="/js/glass-specular.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work

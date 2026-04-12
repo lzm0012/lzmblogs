@@ -1,0 +1,323 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Hexo" [ref=e6] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e7]:
+        - heading "introduction to SQL" [level=1] [ref=e8]
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e13]: Created
+            - time [ref=e14]: 2026-04-01
+          - generic [ref=e15]:
+            - generic [ref=e17]: Updated
+            - time [ref=e18]: 2026-04-01
+          - generic [ref=e19]:
+            - generic [ref=e21]: Word Count
+            - generic [ref=e22]: "339"
+          - generic [ref=e23]:
+            - generic [ref=e25]: Reading Time
+            - generic [ref=e26]: 1mins
+    - main [ref=e27]:
+      - generic [ref=e28]:
+        - article [ref=e29]:
+          - heading "SQL language" [level=2] [ref=e30]
+          - heading "tables & keys" [level=3] [ref=e31]
+          - paragraph [ref=e32]: row->行，对应资料
+          - paragraph [ref=e33]: cloumn->列，对应属性
+          - heading "keys" [level=4] [ref=e34]
+          - list [ref=e35]:
+            - listitem [ref=e36]: 1.primary key（主键）：唯一区分每一个资料的属性，需要注意的是，如果一个primary key无法唯一区分资料属性，此时可以选择多个属性以作为primary key
+            - listitem [ref=e37]: 2.foreign key（外键）：指向另外一个table，通过一个新增属性，并将其设置为primary key，使得两个表格之间进行联系。需要注意的是，foreign key必须为新添加的表格的primary key。同时，foreign key也可以有很多个。
+          - heading "SQL language" [level=4] [ref=e38]
+          - list [ref=e39]:
+            - listitem [ref=e40]: 1.创建资料库
+          - figure [ref=e41]:
+            - generic [ref=e48]: sql
+            - table [ref=e50]:
+              - rowgroup [ref=e51]:
+                - 'row "1 CREATE DATABASE `****`;" [ref=e52]':
+                  - cell "1" [ref=e53]:
+                    - generic [ref=e54]: "1"
+                  - 'cell "CREATE DATABASE `****`;" [ref=e55]':
+                    - generic [ref=e57]: "CREATE DATABASE `****`;"
+          - list [ref=e58]:
+            - listitem [ref=e59]: 2.显示资料库
+          - figure [ref=e60]:
+            - generic [ref=e67]: sql
+            - table [ref=e69]:
+              - rowgroup [ref=e70]:
+                - row "1 SHOW DATABASES;" [ref=e71]:
+                  - cell "1" [ref=e72]:
+                    - generic [ref=e73]: "1"
+                  - cell "SHOW DATABASES;" [ref=e74]:
+                    - generic [ref=e76]: SHOW DATABASES;
+          - list [ref=e77]:
+            - listitem [ref=e78]: 3.选择数据库
+          - figure [ref=e79]:
+            - generic [ref=e86]: sql
+            - table [ref=e88]:
+              - rowgroup [ref=e89]:
+                - 'row "1 USE `***`;" [ref=e90]':
+                  - cell "1" [ref=e91]:
+                    - generic [ref=e92]: "1"
+                  - 'cell "USE `***`;" [ref=e93]':
+                    - generic [ref=e95]: "USE `***`;"
+          - list [ref=e96]:
+            - listitem [ref=e97]: 4.资料形态
+          - figure [ref=e98]:
+            - generic [ref=e105]: sql
+            - table [ref=e107]:
+              - rowgroup [ref=e108]:
+                - row "1 2 3 4 5 6 INT --整数 DECIMAL(m,n) --有小数点的数 VARCHAR(n) --子串 BOLB --(binary large object)包括图片，影片，档案等 DATE --'YYYY-MM-DD'日期 TIMESTAMP --'YYYY-MM-DD HH:MM:SS'时间戳，记录时间" [ref=e109]:
+                  - cell "1 2 3 4 5 6" [ref=e110]:
+                    - generic [ref=e111]:
+                      - text: "1"
+                      - text: "2"
+                      - text: "3"
+                      - text: "4"
+                      - text: "5"
+                      - text: "6"
+                  - cell "INT --整数 DECIMAL(m,n) --有小数点的数 VARCHAR(n) --子串 BOLB --(binary large object)包括图片，影片，档案等 DATE --'YYYY-MM-DD'日期 TIMESTAMP --'YYYY-MM-DD HH:MM:SS'时间戳，记录时间" [ref=e112]:
+                    - generic [ref=e113]:
+                      - generic [ref=e114]: INT --整数
+                      - generic [ref=e115]: DECIMAL(m,n) --有小数点的数
+                      - generic [ref=e116]: VARCHAR(n) --子串
+                      - generic [ref=e117]: BOLB --(binary large object)包括图片，影片，档案等
+                      - generic [ref=e118]: DATE --'YYYY-MM-DD'日期
+                      - generic [ref=e119]: TIMESTAMP --'YYYY-MM-DD HH:MM:SS'时间戳，记录时间
+          - list [ref=e120]:
+            - listitem [ref=e121]: 5.创建table
+          - figure [ref=e122]:
+            - generic [ref=e129]: sql
+            - table [ref=e131]:
+              - rowgroup [ref=e132]:
+                - 'row "1 2 3 4 5 CREATE TABLE `xxxx`( `hayaku`INT PRIMARY KEY, `omazli`VARCHAR(4), `wasaby`VARCHAR(4) )" [ref=e133]':
+                  - cell "1 2 3 4 5" [ref=e134]:
+                    - generic [ref=e135]:
+                      - text: "1"
+                      - text: "2"
+                      - text: "3"
+                      - text: "4"
+                      - text: "5"
+                  - 'cell "CREATE TABLE `xxxx`( `hayaku`INT PRIMARY KEY, `omazli`VARCHAR(4), `wasaby`VARCHAR(4) )" [ref=e136]':
+                    - generic [ref=e137]:
+                      - generic [ref=e138]: "CREATE TABLE `xxxx`("
+                      - generic [ref=e139]: "`hayaku`INT PRIMARY KEY,"
+                      - generic [ref=e140]: "`omazli`VARCHAR(4),"
+                      - generic [ref=e141]: "`wasaby`VARCHAR(4)"
+                      - text: )
+          - list [ref=e142]:
+            - listitem [ref=e143]: 6.显示数据库结构
+          - figure [ref=e144]:
+            - generic [ref=e151]: sql
+            - table [ref=e153]:
+              - rowgroup [ref=e154]:
+                - 'row "1 DESCRIBE `xxxx`;" [ref=e155]':
+                  - cell "1" [ref=e156]:
+                    - generic [ref=e157]: "1"
+                  - 'cell "DESCRIBE `xxxx`;" [ref=e158]':
+                    - generic [ref=e160]: "DESCRIBE `xxxx`;"
+          - list [ref=e161]:
+            - listitem [ref=e162]: 7.删除数据库
+          - figure [ref=e163]:
+            - generic [ref=e170]: sql
+            - table [ref=e172]:
+              - rowgroup [ref=e173]:
+                - 'row "1 DROP `xxxx`;" [ref=e174]':
+                  - cell "1" [ref=e175]:
+                    - generic [ref=e176]: "1"
+                  - 'cell "DROP `xxxx`;" [ref=e177]':
+                    - generic [ref=e179]: "DROP `xxxx`;"
+          - list [ref=e180]:
+            - listitem [ref=e181]: 8.新增/删除表格属性
+          - figure [ref=e182]:
+            - generic [ref=e189]: sql
+            - table [ref=e191]:
+              - rowgroup [ref=e192]:
+                - 'row "1 2 ALTER TABLE `xxxx` ADD mmmm DEIMAL(3,2); ALTER TABLE `xxxx` DROP COLUMN mmmm;" [ref=e193]':
+                  - cell "1 2" [ref=e194]:
+                    - generic [ref=e195]:
+                      - text: "1"
+                      - text: "2"
+                  - 'cell "ALTER TABLE `xxxx` ADD mmmm DEIMAL(3,2); ALTER TABLE `xxxx` DROP COLUMN mmmm;" [ref=e196]':
+                    - generic [ref=e197]:
+                      - generic [ref=e198]: "ALTER TABLE `xxxx` ADD mmmm DEIMAL(3,2);"
+                      - generic [ref=e199]: "ALTER TABLE `xxxx` DROP COLUMN mmmm;"
+          - list [ref=e200]:
+            - listitem [ref=e201]: 9.存入资料
+          - figure [ref=e202]:
+            - generic [ref=e209]: sql
+            - table [ref=e211]:
+              - rowgroup [ref=e212]:
+                - 'row "1 2 INSERT INTO `xxxx` VALUES(1,''MANBO'',''HACHIMI''); INSERT INTO `xxxx`(`mm)" [ref=e213]':
+                  - cell "1 2" [ref=e214]:
+                    - generic [ref=e215]:
+                      - text: "1"
+                      - text: "2"
+                  - 'cell "INSERT INTO `xxxx` VALUES(1,''MANBO'',''HACHIMI''); INSERT INTO `xxxx`(`mm)" [ref=e216]':
+                    - generic [ref=e217]:
+                      - generic [ref=e218]: "INSERT INTO `xxxx` VALUES(1,'MANBO','HACHIMI');"
+                      - generic [ref=e219]: "INSERT INTO `xxxx`(`mm)"
+          - list [ref=e220]:
+            - listitem [ref=e221]: 10.列出资料
+          - figure [ref=e222]:
+            - generic [ref=e229]: sql
+            - table [ref=e231]:
+              - rowgroup [ref=e232]:
+                - 'row "1 SELECT * FROM `xxxx`;" [ref=e233]':
+                  - cell "1" [ref=e234]:
+                    - generic [ref=e235]: "1"
+                  - 'cell "SELECT * FROM `xxxx`;" [ref=e236]':
+                    - generic [ref=e238]: "SELECT * FROM `xxxx`;"
+          - list [ref=e239]:
+            - listitem [ref=e240]: 11.限制/约束
+          - figure [ref=e241]:
+            - generic [ref=e248]: sql
+            - table [ref=e250]:
+              - rowgroup [ref=e251]:
+                - row "1 2 3 NOT NULL --不得为空 UNIQUE --单独值，不可重复 DEFAULT 'genshin' --默认值" [ref=e252]:
+                  - cell "1 2 3" [ref=e253]:
+                    - generic [ref=e254]:
+                      - text: "1"
+                      - text: "2"
+                      - text: "3"
+                  - cell "NOT NULL --不得为空 UNIQUE --单独值，不可重复 DEFAULT 'genshin' --默认值" [ref=e255]:
+                    - generic [ref=e256]:
+                      - generic [ref=e257]: NOT NULL --不得为空
+                      - generic [ref=e258]: UNIQUE --单独值，不可重复
+                      - generic [ref=e259]: DEFAULT 'genshin' --默认值
+          - list [ref=e260]:
+            - listitem [ref=e261]:
+              - list [ref=e262]:
+                - listitem [ref=e263]
+        - generic [ref=e264]:
+          - text: 
+          - generic [ref=e265]:
+            - generic [ref=e266]: "Author:"
+            - link "Ask" [ref=e269] [cursor=pointer]:
+              - /url: https://askblog.dev
+          - generic [ref=e270]:
+            - generic [ref=e271]: "Link:"
+            - link "https://askblog.dev/2026/04/01/database-003/" [ref=e274] [cursor=pointer]:
+              - /url: https://askblog.dev/2026/04/01/database-003/
+          - generic [ref=e275]:
+            - generic [ref=e276]: "Copyright Notice:"
+            - generic [ref=e278]:
+              - text: All articles on this blog are licensed under
+              - link "CC BY-NC-SA 4.0" [ref=e279] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+              - text: unless otherwise stated.
+        - generic [ref=e280]:
+          - link "database" [ref=e282] [cursor=pointer]:
+            - /url: /tags/database/
+          - generic [ref=e284]:
+            - link "" [ref=e285] [cursor=pointer]:
+              - /url: https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A4000%2F2026%2F04%2F01%2Fdatabase-003%2F
+            - link "" [ref=e286] [cursor=pointer]:
+              - /url: https://x.com/intent/tweet?text=introduction%20to%20SQL%20%7C%20Hexo&url=http%3A%2F%2F127.0.0.1%3A4000%2F2026%2F04%2F01%2Fdatabase-003%2F&via=http%3A%2F%2F127.0.0.1%3A4000
+            - link "" [ref=e287] [cursor=pointer]:
+              - /url: "javascript:"
+            - link "" [ref=e288] [cursor=pointer]:
+              - /url: https://service.weibo.com/share/share.php?url=http%3A%2F%2F127.0.0.1%3A4000%2F2026%2F04%2F01%2Fdatabase-003%2F&title=introduction%20to%20SQL%20%7C%20Hexo&pic=%2Fimg%2Fmy-avatar.jpg&appkey=
+            - link "" [ref=e289] [cursor=pointer]:
+              - /url: http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2F127.0.0.1%3A4000%2F2026%2F04%2F01%2Fdatabase-003%2F&title=introduction%20to%20SQL%20%7C%20Hexo&source=introduction%20to%20SQL%20%7C%20Hexo&desc=SQL%20language%20tables%20%26%20keys%20row-%3E%E8%A1%8C%EF%BC%8C%E5%AF%B9%E5%BA%94%E8%B5%84%E6%96%99%20cloumn-%3E%E5%88%97%EF%BC%8C%E5%AF%B9%E5%BA%94%E5%B1%9E%E6%80%A7%20keys%20%201.primary%20key%EF%BC%88%E4%B8%BB%E9%94%AE%EF%BC%89%EF%BC%9A%E5%94%AF%E4%B8%80%E5%8C%BA%E5%88%86%E6%AF%8F%E4%B8%80%E4%B8%AA%E8%B5%84%E6%96%99%E7%9A%84%E5%B1%9E%E6%80%A7%EF%BC%8C%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E6%98%AF%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%B8%80%E4%B8%AAprimary%20key%E6%97%A0%E6%B3%95%E5%94%AF%E4%B8%80%E5%8C%BA%E5%88%86%E8%B5%84%E6%96%99%E5%B1%9E%E6%80%A7%EF%BC%8C%E6%AD%A4%E6%97%B6%E5%8F%AF%E4%BB%A5%E9%80%89%E6%8B%A9%E5%A4%9A%E4%B8%AA%E5%B1%9E%E6%80%A7%E4%BB%A5%E4%BD%9C%E4%B8%BAprimary%20key%202.foreign%20key%EF%BC%88%E5%A4%96%E9%94%AE%EF%BC%89%EF%BC%9A%E6%8C%87%E5%90%91%E5%8F%A6%E5%A4%96%E4%B8%80%E4%B8%AAtable%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E4%B8%AA%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7%EF%BC%8C%E5%B9%B6%E5%B0%86&pics=%2Fimg%2Fmy-avatar.jpg&summary="SQL%20language%20tables%20%26%20keys%20row-%3E%E8%A1%8C%EF%BC%8C%E5%AF%B9%E5%BA%94%E8%B5%84%E6%96%99%20cloumn-%3E%E5%88%97%EF%BC%8C%E5%AF%B9%E5%BA%94%E5%B1%9E%E6%80%A7%20keys%20%201.primary%20key%EF%BC%88%E4%B8%BB%E9%94%AE%EF%BC%89%EF%BC%9A%E5%94%AF%E4%B8%80%E5%8C%BA%E5%88%86%E6%AF%8F%E4%B8%80%E4%B8%AA%E8%B5%84%E6%96%99%E7%9A%84%E5%B1%9E%E6%80%A7%EF%BC%8C%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E6%98%AF%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%B8%80%E4%B8%AAprimary%20key%E6%97%A0%E6%B3%95%E5%94%AF%E4%B8%80%E5%8C%BA%E5%88%86%E8%B5%84%E6%96%99%E5%B1%9E%E6%80%A7%EF%BC%8C%E6%AD%A4%E6%97%B6%E5%8F%AF%E4%BB%A5%E9%80%89%E6%8B%A9%E5%A4%9A%E4%B8%AA%E5%B1%9E%E6%80%A7%E4%BB%A5%E4%BD%9C%E4%B8%BAprimary%20key%202.foreign%20key%EF%BC%88%E5%A4%96%E9%94%AE%EF%BC%89%EF%BC%9A%E6%8C%87%E5%90%91%E5%8F%A6%E5%A4%96%E4%B8%80%E4%B8%AAtable%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E4%B8%AA%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7%EF%BC%8C%E5%B9%B6%E5%B0%86"
+        - navigation [ref=e290]:
+          - 'link "Next 算法分析与设计 002 分治策略 分治递归 归并排序 将序列从中间分为两个子序列 对两个子序列进行归并排序 1234567891011121314151617181920212223242526template <typename T>void merge_sort(T data[], T out[], int s, int m, int l) { int i = s; int j = m + 1; int k = s; while (i <= m && j <= l) { if (data[i] <= data[j]) out[k++] = data[i++]; else out[k++] = data[j++]; } while (i <= m) out[k++] = data[i++]; while (j <= l) out[k++] = data[j++]; for (int p = s; p <= l; ++p) data[p] = out[p];}templ..." [ref=e291] [cursor=pointer]':
+            - /url: /2026/03/21/algorithm-analysis-design-002/
+            - generic:
+              - generic [ref=e293]:
+                - generic [ref=e294]: Next
+                - generic [ref=e295]: 算法分析与设计 002
+              - generic [ref=e297]: "分治策略 分治递归 归并排序 将序列从中间分为两个子序列 对两个子序列进行归并排序 1234567891011121314151617181920212223242526template <typename T>void merge_sort(T data[], T out[], int s, int m, int l) { int i = s; int j = m + 1; int k = s; while (i <= m && j <= l) { if (data[i] <= data[j]) out[k++] = data[i++]; else out[k++] = data[j++]; } while (i <= m) out[k++] = data[i++]; while (j <= l) out[k++] = data[j++]; for (int p = s; p <= l; ++p) data[p] = out[p];}templ..."
+        - generic [ref=e298]:
+          - generic [ref=e299]: Related Articles
+          - generic [ref=e301]:
+            - link "2026-03-09 Database 001 Database 001 chapter 1：introduction to database 1.SQL language e.g. 123select instructor namefrom instructorwhere instructor.dept_name = History 在 relation model 中，数据以 retion 的形式进行表示，而 SQL 语言的作用是用一种标准化语言，对关系数据进行定义、查询、更新和管理 因此我们可以说， SQL 语言本质是面向关系函数的声明式语言。 relation 表示一张表 tuple 元组，表示一行 attribute 属性，表中的一列 schema 属性，即表的结构 query processor componet DDL interpreter -> DML compiler -> Query evaluation engine DDL Interpreter 更新数据库系统目录 当收到输入的时候，发生下述操作： 1234567SQL语句 ↓语法解析 ↓更新系统目录 ↓分配存储结构..." [ref=e302] [cursor=pointer]:
+              - /url: /2026/03/09/database-001/
+              - generic:
+                - generic [ref=e304]:
+                  - generic [ref=e305]: 2026-03-09
+                  - generic [ref=e307]: Database 001
+                - generic [ref=e309]: Database 001 chapter 1：introduction to database 1.SQL language e.g. 123select instructor namefrom instructorwhere instructor.dept_name = History 在 relation model 中，数据以 retion 的形式进行表示，而 SQL 语言的作用是用一种标准化语言，对关系数据进行定义、查询、更新和管理 因此我们可以说， SQL 语言本质是面向关系函数的声明式语言。 relation 表示一张表 tuple 元组，表示一行 attribute 属性，表中的一列 schema 属性，即表的结构 query processor componet DDL interpreter -> DML compiler -> Query evaluation engine DDL Interpreter 更新数据库系统目录 当收到输入的时候，发生下述操作： 1234567SQL语句 ↓语法解析 ↓更新系统目录 ↓分配存储结构...
+            - link "2026-03-16 Database 002 关系表 keys（码，键） 1. superkey（超码） 定义：Super key是关系数据库中用于唯一标识一个元组（即一行记录）的属性集合。 Super key是关系数据库中用于唯一标识一个元组（即一行记录）的属性集合。 在一个关系模式 (RRR) 中，若属性集 (K⊆RK \\subseteq RK⊆R) 满足： 对于关系中的任意两个不同元组，它们在 (KKK) 上的取值都不相同， 那么 (KKK) 就称为该关系的一个 super key。 2. candidate key（候选码） 定义：在关系模式中，能够唯一标识一个元组，并且在这个属性集合中任何一个属性都不能再删去的属性集。 特点： （1） 唯一性 候选键的取值必须能够区分关系中的每一行记录。 （2）极小性 候选键必须是“最小的唯一标识集合”。 只要去掉其中任意一个属性，就不再具有唯一标识能力。 与super key的关系：CandidateKey=MinimalSuperKeyCandidate Key=Minimal Super KeyCandidateKey=MinimalSuperKey 3. primary..." [ref=e310] [cursor=pointer]:
+              - /url: /2026/03/16/database-002/
+              - generic:
+                - generic [ref=e312]:
+                  - generic [ref=e313]: 2026-03-16
+                  - generic [ref=e315]: Database 002
+                - generic [ref=e317]: 关系表 keys（码，键） 1. superkey（超码） 定义：Super key是关系数据库中用于唯一标识一个元组（即一行记录）的属性集合。 Super key是关系数据库中用于唯一标识一个元组（即一行记录）的属性集合。 在一个关系模式 (RRR) 中，若属性集 (K⊆RK \subseteq RK⊆R) 满足： 对于关系中的任意两个不同元组，它们在 (KKK) 上的取值都不相同， 那么 (KKK) 就称为该关系的一个 super key。 2. candidate key（候选码） 定义：在关系模式中，能够唯一标识一个元组，并且在这个属性集合中任何一个属性都不能再删去的属性集。 特点： （1） 唯一性 候选键的取值必须能够区分关系中的每一行记录。 （2）极小性 候选键必须是“最小的唯一标识集合”。 只要去掉其中任意一个属性，就不再具有唯一标识能力。 与super key的关系：CandidateKey=MinimalSuperKeyCandidate Key=Minimal Super KeyCandidateKey=MinimalSuperKey 3. primary...
+      - generic [ref=e318]:
+        - generic [ref=e319]:
+          - img "avatar" [ref=e321]
+          - generic [ref=e322]: Ask
+          - generic [ref=e323]: blogs of lzm
+          - generic [ref=e324]:
+            - link "Articles 9" [ref=e325] [cursor=pointer]:
+              - /url: /archives/
+              - generic [ref=e326]: Articles
+              - generic [ref=e327]: "9"
+            - link "Tags 12" [ref=e328] [cursor=pointer]:
+              - /url: /tags/
+              - generic [ref=e329]: Tags
+              - generic [ref=e330]: "12"
+            - link "Categories 5" [ref=e331] [cursor=pointer]:
+              - /url: /categories/
+              - generic [ref=e332]: Categories
+              - generic [ref=e333]: "5"
+          - link "Visit GitHub" [ref=e334] [cursor=pointer]:
+            - /url: https://github.com/lzm0012
+            - text: Visit GitHub
+        - generic [ref=e336]:
+          - generic [ref=e337]: Announcement
+          - generic [ref=e339]: This is my Blog
+        - generic [ref=e340]:
+          - generic [ref=e341]:
+            - generic [ref=e342]: Contents
+            - list [ref=e345]:
+              - listitem [ref=e346]:
+                - link "1. SQL language" [ref=e347] [cursor=pointer]:
+                  - /url: "#SQL-language"
+          - generic [ref=e348]:
+            - generic [ref=e349]: Recent Posts
+            - generic [ref=e351]:
+              - generic [ref=e353]:
+                - link "introduction to SQL" [ref=e354] [cursor=pointer]:
+                  - /url: /2026/04/01/database-003/
+                - time [ref=e355]: 2026-04-01
+              - generic [ref=e357]:
+                - link "算法分析与设计 002" [ref=e358] [cursor=pointer]:
+                  - /url: /2026/03/21/algorithm-analysis-design-002/
+                - time [ref=e359]: 2026-03-21
+              - generic [ref=e361]:
+                - link "Database 002" [ref=e362] [cursor=pointer]:
+                  - /url: /2026/03/16/database-002/
+                - time [ref=e363]: 2026-03-16
+              - generic [ref=e365]:
+                - link "算法分析与设计 001" [ref=e366] [cursor=pointer]:
+                  - /url: /2026/03/14/algorithm-analysis-design-001/
+                - time [ref=e367]: 2026-03-14
+              - generic [ref=e369]:
+                - link "雷达信号处理 001" [ref=e370] [cursor=pointer]:
+                  - /url: /2026/03/10/radar-signal-processing-001/
+                - time [ref=e371]: 2026-03-10
+    - contentinfo [ref=e372]:
+      - generic [ref=e374]:
+        - text: © 2025 - 2026 By Ask
+        - generic [ref=e375]:
+          - text: Framework
+          - link "Hexo 8.1.1" [ref=e376] [cursor=pointer]:
+            - /url: https://hexo.io
+          - text: "|Theme"
+          - link "Butterfly 5.5.4" [ref=e377] [cursor=pointer]:
+            - /url: https://github.com/jerryc127/hexo-theme-butterfly
+  - generic [ref=e378]:
+    - generic:
+      - button "Reading Mode" [ref=e379] [cursor=pointer]
+      - button "Toggle Between Light and Dark Mode" [ref=e381] [cursor=pointer]
+      - button "Toggle Between Single-column and Double-column" [ref=e383] [cursor=pointer]
+    - generic [ref=e385]:
+      - button "Settings" [ref=e386] [cursor=pointer]
+      - button "Back to Top" [ref=e388] [cursor=pointer]
+  - img

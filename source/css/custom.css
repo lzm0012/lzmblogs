@@ -303,7 +303,7 @@ figure.highlight table {
   overflow: hidden;
   isolation: isolate;
   border: 1px solid rgba(255, 255, 255, 0.07) !important;
-  background: rgba(255, 255, 255, 0.015) !important;
+  background: rgba(255, 255, 255, 0.01) !important;
   box-shadow:
     inset 0 0.5px 0 rgba(255, 255, 255, 0.18),
     inset 0 -0.5px 0 rgba(255, 255, 255, 0.015),
@@ -352,11 +352,11 @@ figure.highlight table {
 }
 
 #post-info #post-meta .post-meta-chip-strong {
-  background: rgba(255, 255, 255, 0.018) !important;
+  background: rgba(255, 255, 255, 0.012) !important;
 }
 
 #post-info #post-meta .post-meta-chip-medium {
-  background: rgba(255, 255, 255, 0.012) !important;
+  background: rgba(255, 255, 255, 0.008) !important;
 }
 
 #post-info #post-meta .post-meta-chip::before {
@@ -385,7 +385,7 @@ figure.highlight table {
 
 [data-theme='dark'] #post-info #post-meta .post-meta-chip {
   border-color: rgba(255, 255, 255, 0.05) !important;
-  background: rgba(255, 255, 255, 0.014) !important;
+  background: rgba(255, 255, 255, 0.01) !important;
   box-shadow:
     inset 0 0.5px 0 rgba(255, 255, 255, 0.065),
     inset 0 -0.5px 0 rgba(255, 255, 255, 0.012),
@@ -508,7 +508,7 @@ figure.highlight table {
     inset 0 0 1px rgba(24, 36, 56, 0.14),
     0 10px 20px rgba(33, 43, 58, 0.06),
     0 4px 10px rgba(33, 43, 58, 0.024) !important;
-  background: rgba(255, 255, 255, 0.026) !important;
+  background: rgba(255, 255, 255, 0.016) !important;
 }
 
 [data-theme='dark'] #post-info #post-meta .post-meta-chip:hover {
@@ -518,7 +518,7 @@ figure.highlight table {
     inset 0 0 1px rgba(0, 0, 0, 0.24),
     0 12px 22px rgba(0, 0, 0, 0.16),
     0 4px 10px rgba(0, 0, 0, 0.08) !important;
-  background: rgba(255, 255, 255, 0.02) !important;
+  background: rgba(255, 255, 255, 0.012) !important;
 }
 
 /* Clean glass only: refraction/noise layer removed */
